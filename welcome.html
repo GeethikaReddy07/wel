@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Login & Sign-Up</title>
+<!-- Include Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+  body { font-family: 'Arial', sans-serif; background: #f7f7f7; }
+  .login-container { max-width: 400px; margin: 50px auto; background: white;color: #030a12; padding: 20px; border-radius: 10px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+  .welcome { text-align: left; font-size: 24px; color: #601aa2; }
+  .social-login { display: flex; justify-content: space-around; margin: 20px 0; }
+  .social-button { border: none; border-radius: 5px; padding: 10px; cursor: pointer; }
+  .facebook {
+    background-color: #3b5998;color: white;
+  }
+
+  .facebook:hover {
+    background-color: #2d4373;
+  }
+
+  .twitter {
+    background-color: #1da1f2;color: white;
+  }
+
+  .twitter:hover {
+    background-color: #0d8ddb;
+  }
+
+  .sign{
+    background: #3b5998;
+    color: white;
+    width: 150px;
+  }
+  .email-login { text-align: center; margin: 20px 0; }
+  .email-login input { width: 90%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; }
+  .sign-up {  background-color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+  }
+  .sign-up a { color:#604cae; text-decoration: none; }
+  .image {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically if the container has a specific height */
+    margin-top: 20px; 
+  }
+  .description{
+    text-align: center;
+  }
+  .social-button a{
+    color: white;
+    text-decoration: none;
+  }
+  .signup {
+    width: 90%;
+    padding: 10px;
+    background-color:#604cae;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .signup a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .signup:hover {
+    background-color: #604cae;
+  }
+
+  .net{color: #3b5998;}
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <div class="welcome"><h2>Welcome</h2></div>
+  <h5>Please login or sign up to continue using our app.</h5>
+  <div class="image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaidPfFb7QgYi-fBtpWJx7BtmL9FqQOnS3OOPuc2Sun9KmyUf9mPAT9M1tDZto7QJ_Yfc&usqp=CAU" alt="logo">
+  </div>
+  <div class="description">
+    <h5 class="net">Enter via Social Networks </h5>
+  </div>
+  
+  <div class="social-login">
+    <button class="social-button facebook"><a href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i> Facebook</a></button>
+    <button class="social-button twitter"><a href="https://twitter.com/login"><i class="fab fa-twitter"></i> Twitter</a></button>
+  </div>
+  
+  <div>
+    <center><h5 class="e-mail"> or Login with Email</h5></center>
+  </div>
+  <center>
+    <button class="social-button signup"><a href="signup.html">Sign up</a></button>
+  </center> 
+  <div class="sign-up"> You already have an account? <a href="login.html">Login</a></div>
+</div>
+
+</body>
+</html>
